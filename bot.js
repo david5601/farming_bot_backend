@@ -7,7 +7,7 @@ const app = express();
 const fetch = require('node-fetch');
 
 let userInfo = {}
-const bot = new Telegraf('7120901530:AAEp0BuulmPwBflGGDMucWRjN-zCFudGMSs'); // Replace with your bot token
+const bot = new Telegraf('7330337683:AAFnumZOjfUMzSk4ZxNokueGmb6YnvR4ktE'); // Replace with your bot token
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 bot.start((ctx) => {
@@ -21,7 +21,7 @@ bot.start((ctx) => {
     console.log(`Referral ID: ${referralId}`);
   }
 
-  getWebhookInfo('7120901530:AAEp0BuulmPwBflGGDMucWRjN-zCFudGMSs')
+  getWebhookInfo('7330337683:AAFnumZOjfUMzSk4ZxNokueGmb6YnvR4ktE')
   setBotDescription('About Farmix\n\nFarmix is the first Mine & Earn platform platform from Farmix Capital. This project marks the start of our expansion to TON League.\n\nApp Benefits for Users:\n🔹 Participation: Become an investor via our Farmix mining platform\n🔹 Profit: Purchase mining power with TRX, BNB, or TON tokens to generate income\n🔹 Community: We aim to build a multilingual, global community of investors\n\nWith time we will expand our ecosystem with new TG apps, providing you with earning & entertainment opportunities.')
   const imagePath = path.join(__dirname, 'public', 'images', 'photo.jpg');
   ctx.replyWithPhoto({ source: fs.createReadStream(imagePath) }, {
